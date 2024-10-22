@@ -1,5 +1,5 @@
 ** 예시문제 설명
-![fig1](./fig1.png)
+![fig1](./fig.png)
 - 5by5 block tridagonal system: m=5
 - system 7개: nsys=7
 - block 14개: n=14
