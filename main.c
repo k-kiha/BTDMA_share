@@ -107,9 +107,9 @@ int main(){
             for(int sys = 0; sys < nsys; sys++){
                 // LAPACK_COL_MAJOR
                 for(int i = 0; i < m; i++){        
-                    d[i + sys*(m)+ q*(m*nsys)] = 0.;
-                    if(q==0  && myrank ==0       ) d[i + sys*(m)+ q*(m*nsys)] = -testV[i] ;
-                    if(q==n-1&& myrank ==nprocs-1) d[i + sys*(m)+ q*(m*nsys)] = -testV[i] ;
+                    d[i + sys*(m)+ q*(m*nsys)] = -testV[i] ;
+                    if(q==0  && myrank ==0       ) d[i + sys*(m)+ q*(m*nsys)] = -2*testV[i] ;
+                    if(q==n-1&& myrank ==nprocs-1) d[i + sys*(m)+ q*(m*nsys)] = -2*testV[i] ;
                 }
 
                 for(int j = 0; j < m; j++){
