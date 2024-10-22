@@ -8,7 +8,7 @@
 - 각 코어당 block 개수: nsub=5(rank0),5(rank1),4(rank1)
 
 
-## (1) 빌드방법-실행방법-정리
+## 빌드-실행-정리
 ```bash
 source 1_build.sh
 source 2_run.sh
