@@ -117,7 +117,7 @@ int main(){
                         // LAPACK_COL_MAJOR
                         ij = i + m*j;
                         a[ij + sys*(m*m)+ q*(m*m*nsys)] = 1.*testM[i][j];
-                        b[ij + sys*(m*m)+ q*(m*m*nsys)] =-2.*testM[i][j];
+                        b[ij + sys*(m*m)+ q*(m*m*nsys)] =-3.*testM[i][j];
                         c[ij + sys*(m*m)+ q*(m*m*nsys)] = 1.*testM[i][j];
                     }
                 }
